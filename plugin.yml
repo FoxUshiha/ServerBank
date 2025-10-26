@@ -1,0 +1,19 @@
+name: ServerBank
+main: com.foxsrv.serverbank.ServerBankPlugin
+version: 1.0.0
+api-version: '1.21'
+author: FoxSrv
+website: https://foxsrv.net
+depend: [Vault]
+
+commands:
+  bank:
+    description: Server Bank commands (pay, take, collect)
+    usage: /bank <pay|take|collect> ...
+    permission: serverbank.admin
+    aliases: [serverbank]
+
+permissions:
+  serverbank.admin:
+    description: Allows using /bank commands
+    default: op
